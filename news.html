@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so dien thoai</title>
+</head>
+<body>
+<script>
+    function phone(str) {
+        so = /^\([0-9]{2}\)-\([0]+[0-9]{9}\)$/;
+        if (so.test(str)) {
+            return true;
+        }
+        return "so khong dung";
+    }
+    // let so = " (84)-(0978489648)";
+    // alert(phone(so));
+    // so = " (a8)-(22222222)";
+    // alert(phone(so));
+
+    let so =prompt("nhap so can kiem tra");
+    alert(phone(so));
+
+</script>
+</body>
+</html>
